@@ -1,4 +1,4 @@
-# Laboratório de Cores Mágicas - Documentação
+# Laboratório de Cores Mágicas - Atividade feita em sala de aula
 
 ## Visão Geral
 O "Laboratório de Cores Mágicas" é um projeto interativo que simula a criação de poções mágicas através da mistura de cores RGB. Este exercício foi desenvolvido como parte do aprendizado de JavaScript, manipulação do DOM e interatividade com o usuário.
