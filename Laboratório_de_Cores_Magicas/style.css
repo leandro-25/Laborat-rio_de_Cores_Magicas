@@ -1,0 +1,152 @@
+:root {
+    --potion-color: white;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container principal */
+.magic-lab {
+    text-align: center;
+    padding: 30px;
+    border: 3px solid #8a2be2;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f8f8ff;
+    box-shadow: 0 0 2000px rgba(138, 43, 226, 0.3);
+}
+
+/* Título */
+h1 {
+    color: #8a2be2;
+    margin-bottom: 25px;
+}
+
+/* Área da poção */
+#potion-display {
+    position: relative;
+    height: 400px;
+    width: 500px;
+    margin: 0 auto 30px;
+    background-image: url('calderao.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid #333;
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+#potion-display::before {
+    content: '';
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 155px;
+    height: 45px;
+    background-color: var(--potion-color);
+    border-radius: 50%;
+    z-index: 1;
+    transition: background-color 0.5s ease;
+}
+
+/* Instruções */
+p {
+    margin-bottom: 20px;
+    font-style: italic;
+    color: #555;
+}
+
+/* Container de sliders */
+.sliders-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: rgba(138, 43, 226, 0.1);
+    border-radius: 10px;
+}
+
+.slider-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Estilizando os sliders */
+.color-slider {
+    width: 90%;
+    height: 20px;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+/* Estilizando o slider vermelho */
+#red-slider {
+    background: linear-gradient(to right, #000, #f00);
+}
+
+/* Estilizando o slider verde */
+#green-slider {
+    background: linear-gradient(to right, #000, #0f0);
+}
+
+/* Estilizando o slider azul */
+#blue-slider {
+    background: linear-gradient(to right, #000, #00f);
+}
+
+/* Estilizando o botão do slider */
+.color-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid #8a2be2;
+    cursor: pointer;
+}
+
+.color-slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid #8a2be2;
+    cursor: pointer;
+}
+
+/* Botão de reset */
+#btn-reset {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    color: #333;
+    border: 2px solid #999;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#btn-reset:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}

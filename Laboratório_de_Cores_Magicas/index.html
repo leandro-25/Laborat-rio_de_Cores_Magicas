@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratório de Cores Mágicas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="magic-lab">
+        <h1>Paleta de Cores Mágicas</h1>
+        
+        <div id="potion-display"></div>
+        
+        <p>Mova os sliders para criar sua poção mágica!</p>
+        
+        <div class="sliders-container">
+            <div class="slider-group">
+                <label for="red-slider">Vermelho: <span id="red-value">0</span></label>
+                <input type="range" id="red-slider" min="0" max="255" value="0" class="color-slider">
+            </div>
+            
+            <div class="slider-group">
+                <label for="green-slider">Verde: <span id="green-value">0</span></label>
+                <input type="range" id="green-slider" min="0" max="255" value="0" class="color-slider">
+            </div>
+            
+            <div class="slider-group">
+                <label for="blue-slider">Azul: <span id="blue-value">0</span></label>
+                <input type="range" id="blue-slider" min="0" max="255" value="0" class="color-slider">
+            </div>
+        </div>
+        
+        <button id="btn-reset">Limpar a Poção</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
